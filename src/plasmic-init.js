@@ -1,5 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-react";
-import  HeroForm  from './components/HeroForm';
+import  HeroForm  from './components/HeroForm.tsx';
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -12,11 +12,3 @@ export const PLASMIC = initPlasmicLoader({
   // Disable for production to ensure you render only published changes.
   preview: true,
 })
-
-PLASMIC.registerComponent(HeroForm, {
-    name: 'Hero Form',
-    props: {
-      header: 'string',
-      children: 'slot'
-    }
-  });
